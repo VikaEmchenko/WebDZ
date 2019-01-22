@@ -1,0 +1,32 @@
+<html> 
+	<head> 
+		<title>4.1</title> 
+		<meta charset="utf-8">
+		<script>		
+			function Count() { 
+				var a = document.getElementById('a').value; 
+				var h = document.getElementById('h').value; 
+				if ((a <= 0) || (h <= 0)){ 
+					console.log('Некорректные данные'); 
+					window.alert('Некорректные данные');
+				}
+				else{ 
+				
+				if ((a > 0) || (h > 0)){ 
+					console.log('Площадь треугольника: ' +((a * h)/2));
+					window.alert('Площадь треугольника: ' +((a * h)/2));	
+				} 
+				} 
+				} 
+			 
+		</script> 
+	</head> 
+	<body> 
+	<h3>Площадь треугольника по высоте и основанию</h3>
+		<form> 
+			Длина :<input id="a" type="number"><br> 
+			Высота :<input id="h" type="number"><br> 
+		</form> 
+		<button onClick="Count()">Посчитать</button> 
+	</body> 
+</html>
